@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://rodriguezsharon876-cpu.github.io/perfil-profesional/sitemap.xml
