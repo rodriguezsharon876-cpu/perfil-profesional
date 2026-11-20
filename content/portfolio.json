@@ -1,0 +1,69 @@
+{
+  "profile": {
+    "name": "Sharon Rodríguez",
+    "role": "Desarrolladora de software junior",
+    "tagline": "Construyo experiencias web claras, funcionales y listas para crecer.",
+    "summary": "Tecnóloga en formación en Análisis y Desarrollo de Software, con experiencia práctica en proyectos web, bases de datos y despliegue de aplicaciones. Me caracterizan el aprendizaje autónomo, la disciplina y el trabajo en equipo.",
+    "location": "Bogotá, Colombia",
+    "email": "rodriguezsharon876@gmail.com",
+    "phone": "+57 320 246 3429",
+    "github": "https://github.com/rodriguezsharon876-cpu",
+    "linkedin": "https://linkedin.com/in/sharon-rodriguez-04952a360"
+  },
+  "projects": [
+    {
+      "id": "ibn",
+      "name": "IBN",
+      "eyebrow": "Plataforma institucional · 2026",
+      "role": "Apoyo en desarrollo web",
+      "description": "Rediseño modular para Misión Buenas Nuevas Colombia, con una experiencia más clara para comunidad, contenidos y administración.",
+      "challenge": "Evolucionar una plataforma institucional con contenidos multimedia y necesidades de moderación, manteniendo una navegación sencilla para públicos diversos.",
+      "solution": "Colaboré en una arquitectura modular basada en HTML, CSS, JavaScript y contenido JSON. Trabajé en navegación, carga diferida de videos, moderación, panel administrativo y despliegue en Vercel.",
+      "results": ["5 componentes clave desarrollados", "Contenido desacoplado en JSON", "Despliegue público en Vercel"],
+      "stack": ["JavaScript", "HTML", "CSS", "JSON", "Vercel"],
+      "url": "https://mision-buenas-nuevas-colombia-mu.vercel.app",
+      "repoUrl": "https://github.com/rodriguezsharon876-cpu/IBN-Pagina",
+      "cover": "/projects/ibn/hero-alegria.webp",
+      "gallery": ["/projects/ibn/portada-2026.webp", "/projects/ibn/hero-alegria.webp", "/projects/ibn/comunidad.webp"],
+      "visual": "network"
+    },
+    {
+      "id": "shape",
+      "name": "SHAPE",
+      "eyebrow": "Landing de arquitectura · 2026",
+      "role": "Desarrollo frontend",
+      "description": "Una vitrina digital responsive para presentar proyectos arquitectónicos con jerarquía visual y navegación directa.",
+      "challenge": "Traducir el trabajo de un profesional de arquitectura a una experiencia digital visual, ordenada y legible en cualquier dispositivo.",
+      "solution": "Diseñé y desarrollé una landing responsive con TypeScript, HTML y CSS, organizando los proyectos en una interfaz editorial y publicando la solución en Vercel.",
+      "results": ["Sitio responsive implementado", "Portafolio visual estructurado", "Publicación en Vercel"],
+      "stack": ["TypeScript", "HTML", "CSS", "Vercel"],
+      "url": "https://landing-page-arquitectura.vercel.app",
+      "repoUrl": "https://github.com/rodriguezsharon876-cpu/Landing-Page-Arquitectura",
+      "cover": "/projects/shape/casa-la-vega-01.jpg",
+      "gallery": ["/projects/shape/casa-la-vega-01.jpg", "/projects/shape/casa-el72-03.jpg", "/projects/shape/casa-alhambra-01.jpg"],
+      "visual": "house"
+    },
+    {
+      "id": "xeff",
+      "name": "XEFF",
+      "eyebrow": "Plataforma de gestión · 2026",
+      "role": "Desarrollo full stack",
+      "description": "Un ecosistema operativo para un negocio de belleza que conecta administración, equipo y clientes.",
+      "challenge": "Centralizar agenda, pagos, comunicación y acceso por roles en una sola plataforma para tres tipos de usuario.",
+      "solution": "Construí tres interfaces —panel administrativo, portal de empleadas y portal de clientes— e implementé autenticación por roles, agenda, pagos y chat con React, TypeScript, Express y PostgreSQL.",
+      "results": ["3 interfaces conectadas", "4 módulos principales", "Flujos diferenciados por rol"],
+      "stack": ["React", "TypeScript", "Express", "PostgreSQL"],
+      "url": "https://xeff-api.onrender.com",
+      "repoUrl": "https://github.com/rodriguezsharon876-cpu/xeff-platform",
+      "cover": "/projects/xeff/salon-belleza.jpg",
+      "gallery": ["/projects/xeff/salon-belleza.jpg", "/projects/xeff/xeff-logo.png"],
+      "visual": "flow"
+    }
+  ],
+  "skills": [
+    { "group": "Frontend", "icon": "✦", "items": ["React", "TypeScript", "JavaScript", "HTML", "CSS"] },
+    { "group": "Backend", "icon": "⌁", "items": ["Node.js", "Express", "Python", "APIs REST"] },
+    { "group": "Datos", "icon": "◉", "items": ["PostgreSQL", "SQL", "Supabase", "Neon"] },
+    { "group": "Entrega", "icon": "↗", "items": ["Git", "GitHub", "Vercel", "Render"] }
+  ]
+}
