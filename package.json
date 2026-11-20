@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build --webpack",
+    "build:pages": "PAGES_BASE_PATH=/perfil-profesional NEXT_PUBLIC_BASE_PATH=/perfil-profesional NEXT_PUBLIC_SITE_URL=https://rodriguezsharon876-cpu.github.io/perfil-profesional next build --webpack",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit"

@@ -21,8 +21,12 @@ const sans = localFont({
   display: "swap",
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
+  // Next adds `basePath` to generated metadata routes. Keeping metadataBase at
+  // the origin avoids duplicating `/perfil-profesional` in social image URLs.
+  metadataBase: new URL(new URL(siteUrl).origin),
   title: {
     default: "Sharon Rodríguez · Desarrolladora Full Stack",
     template: "%s · Sharon Rodríguez",
@@ -36,6 +40,18 @@ export const metadata: Metadata = {
     description: "Productos digitales con estructura, intención y detalle.",
     type: "website",
     locale: "es_CO",
+    images: [{
+      url: `${siteUrl}/images/sharon-rodriguez-new.png`,
+      width: 1448,
+      height: 1086,
+      alt: "Sharon Rodríguez — Desarrolladora de software",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sharon Rodríguez · Sede Digital",
+    description: "Productos digitales con estructura, intención y detalle.",
+    images: [`${siteUrl}/images/sharon-rodriguez-new.png`],
   },
   robots: { index: true, follow: true },
 };

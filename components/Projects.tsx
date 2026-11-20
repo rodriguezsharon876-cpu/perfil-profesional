@@ -9,6 +9,7 @@ import {
 } from "motion/react";
 import Image from "next/image";
 import { useRef } from "react";
+import { withBasePath } from "@/lib/site-path";
 
 type Project = {
   id: string;
@@ -33,15 +34,15 @@ function ProjectGallery({ project }: { project: Project }) {
     <div className={`project-gallery gallery-${project.id}`} aria-label={`Galería visual del proyecto ${project.name}`}>
       <figure className="project-shot shot-main">
         <div className="browser-bar"><i /><i /><i /><span>{project.name.toLowerCase()}.project</span></div>
-        <div className="shot-image"><Image src={images[0]} alt={`Vista principal de ${project.name}`} fill sizes="(max-width: 700px) 85vw, 45vw" /></div>
+        <div className="shot-image"><Image src={withBasePath(images[0])} alt={`Vista principal de ${project.name}`} fill sizes="(max-width: 700px) 85vw, 45vw" /></div>
         <figcaption>Vista principal</figcaption>
       </figure>
       <figure className="project-shot shot-detail">
-        <div className="shot-image"><Image src={images[1]} alt={`Detalle visual de ${project.name}`} fill sizes="(max-width: 700px) 50vw, 24vw" /></div>
+        <div className="shot-image"><Image src={withBasePath(images[1])} alt={`Detalle visual de ${project.name}`} fill sizes="(max-width: 700px) 50vw, 24vw" /></div>
         <figcaption>Interfaz · detalle</figcaption>
       </figure>
       <figure className="project-shot shot-mobile">
-        <div className="shot-image"><Image src={images[2]} alt={`Vista complementaria de ${project.name}`} fill sizes="(max-width: 700px) 32vw, 16vw" /></div>
+        <div className="shot-image"><Image src={withBasePath(images[2])} alt={`Vista complementaria de ${project.name}`} fill sizes="(max-width: 700px) 32vw, 16vw" /></div>
         <figcaption>Experiencia visual</figcaption>
       </figure>
     </div>
@@ -71,7 +72,7 @@ function ProjectScene({ project, index, total, nextId, previousId }: { project: 
       <div className="project-stage">
         <motion.div className="project-transition" style={{ opacity: introOpacity, transform: introTransform, pointerEvents: introPointer }}>
           <Image
-            src={project.cover}
+            src={withBasePath(project.cover)}
             alt=""
             fill
             loading={index === 0 ? "eager" : "lazy"}

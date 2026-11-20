@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion, useReducedMotion } from "motion/react";
+import { withBasePath } from "@/lib/site-path";
 
 type Profile = {
   name: string;
@@ -20,9 +21,9 @@ export default function Hero({ profile }: { profile: Profile }) {
   };
 
   const projects = [
-    { name: "SHAPE", label: "Arquitectura", href: "#shape", image: "/projects/shape/casa-la-vega-01.jpg", tone: "shape" },
-    { name: "IBN", label: "Comunidad", href: "#ibn", image: "/projects/ibn/portada-2026.webp", tone: "ibn" },
-    { name: "XEFF", label: "Gestión", href: "#xeff", image: "/projects/xeff/salon-belleza.jpg", tone: "xeff" },
+    { name: "SHAPE", label: "Arquitectura", href: "#shape", image: withBasePath("/projects/shape/casa-la-vega-01.jpg"), tone: "shape" },
+    { name: "IBN", label: "Comunidad", href: "#ibn", image: withBasePath("/projects/ibn/portada-2026.webp"), tone: "ibn" },
+    { name: "XEFF", label: "Gestión", href: "#xeff", image: withBasePath("/projects/xeff/salon-belleza.jpg"), tone: "xeff" },
   ];
 
   return (
@@ -72,7 +73,7 @@ export default function Hero({ profile }: { profile: Profile }) {
 
       <motion.div className="portrait-wrap" {...enter}>
         <Image
-          src="/images/sharon-rodriguez-new.png"
+          src={withBasePath("/images/sharon-rodriguez-new.png")}
           alt="Retrato de Sharon Rodríguez, desarrolladora de software"
           width={1448}
           height={1086}
